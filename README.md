@@ -10,6 +10,14 @@ This program can be useful for anyone who needs to quickly evaluate multiple pol
 
 The program reads a file containing polynomial expressions in the format `f(x) = expression`. Each expression is stored in a linked list, where each node represents a term in the polynomial. The program then evaluates each expression at the given value of x using the `evaluate` function, which calculates the result by iterating through the linked list and summing the result of each term.
 
+## Skills Demonstrated
+
+- C++ programming
+- File input/output
+- Data structures (e.g., linked list)
+- Algorithm design and implementation
+- Code refactoring and optimization
+
 ## Getting Started
 
 ### Prerequisites
