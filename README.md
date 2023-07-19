@@ -22,6 +22,18 @@ The program reads a file containing polynomial expressions in the format `f(x) =
 2. Run the program and enter the filename containing the polynomial expressions when prompted.
 3. The program will output the evaluated result of each expression.
 
+### Example
+
+![Example usage](/images/Polynomial-Example.gif)
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, here's how you can get started:
+
+- **Report issues:** If you find a bug or have a suggestion for a new feature, please [open an issue](https://github.com/SawolTesf/Polynomial-Evaluator/issues) on GitHub.
+- **Submit pull requests:** If you have made changes to the code that you would like to contribute, please [submit a pull request](https://github.com/SawolTesf/Polynomial-Evaluator/pulls) on GitHub.
+- **Get in touch:** If you have any questions or would like to discuss your ideas for contributing to this project, feel free to [contact me](mailto:sawoltesf@gmail.com).
+
 ## License
 
 This project is licensed under the MIT License.

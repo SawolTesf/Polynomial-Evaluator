@@ -12,7 +12,8 @@ double evaluate(const LinkedList& list, double x) {
         if (!(list[i]->getCoef() == 6 && list[i]->getExp() == -4)) { // Only include terms with coefficient not equal to 6 and exponent not equal to -4
             if (list[i]->getExp() >= 0) {
                 result += list[i]->getCoef() * pow(x, list[i]->getExp());
-            } else {
+            } 
+            else {
                 result += list[i]->getCoef() / pow(x, -list[i]->getExp());
             }
         }
@@ -78,10 +79,12 @@ int main() {
                 size_t expPos = term.find('^');
                 if (expPos != std::string::npos) {
                     exp = atoi(term.substr(expPos + 1).c_str());
-                } else {
+                } 
+                else {
                     exp = 1;
                 }
-            } else {
+            } 
+            else {
                 coef *= atof(term.c_str());
             }
 
@@ -108,10 +111,12 @@ int main() {
             size_t expPos = term.find('^');
             if (expPos != std::string::npos) {
                 exp = atoi(term.substr(expPos + 1).c_str());
-            } else {
+            } 
+            else {
                 exp = 1;
             }
-        } else {
+        } 
+        else {
             coef *= atof(term.c_str());
         }
 

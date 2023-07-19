@@ -91,7 +91,8 @@ std::ostream& operator<<(std::ostream& os, const LinkedList& list) {
     while (current != nullptr) {
         if (current->getCoef() < 0) {
             os << "- ";
-        } else if (current != list.head) {
+        } 
+        else if (current != list.head) {
             os << "+ ";
         }
         os << *current << " ";
@@ -104,7 +105,8 @@ std::ostream& operator<<(std::ostream& os, const LinkedList& list) {
 void LinkedList::operator+=(Node* node) {
     if (head == nullptr) {
         head = node;
-    } else {
+    } 
+    else {
         Node* current = head;
         while (current->getNext() != nullptr) {
             current = current->getNext();
@@ -138,7 +140,8 @@ void LinkedList::sortList() {
 
                 prev = temp;
                 swapped = true;
-            } else {
+            } 
+            else {
                 prev = current;
                 current = current->getNext();
             }
@@ -158,7 +161,8 @@ void LinkedList::addNode(double coef, int exp)
   Node *new_node = new Node(coef, exp);
   if (head == nullptr) {
       head = new_node;
-  } else {
+  } 
+  else {
       Node *temp = head;
       while (temp->getNext() != nullptr) {
           temp = temp->getNext();
@@ -186,13 +190,15 @@ void LinkedList::combineLikeTerms()
                     delete current2;
                     size--;
                     current2 = prev2->getNext(); // Move to next node after deletion
-                } else {
+                } 
+                else {
                     current1->setCoef(newCoef);
                     prev2->setNext(current2->getNext());
                     delete current2;
                     size--;
                 }
-            } else {
+            } 
+            else {
                 prev2 = prev2->getNext();
             }
             current2 = prev2->getNext(); // Move to next node
@@ -212,7 +218,8 @@ double LinkedList::evaluate(double x) const
             for (int i = 0; i < current->getExp(); i++) {
                 term *= x;
             }
-        } else {
+        } 
+        else {
             for (int i = 0; i < -current->getExp(); i++) {
                 term /= x;
             }
